@@ -1,0 +1,19 @@
+---
+
+
+---
+
+<h1 id="numpy">NumPy</h1>
+<h3 id="numpy-vs-lists">NumPy vs Lists</h3>
+<p>A list is the Python equivalent of an array, but is resizeable and can contain elements of different types.<br>
+The first question which arose in my mind is why can we not use lists as arrays? By default lists are 1D in nature but we can store multidimensional information by simply creating a list of lists right?<br>
+Turns out the answer is NO! Let us look at the reasons:</p>
+<ul>
+<li><strong>Size</strong>  - Lists in the background behave more like linked lists thereby requiring more space for storing the extra reference pointer. Since arrays are fixed in size, they are more compact.</li>
+<li><strong>Performance</strong>  - speed is much faster than lists</li>
+<li><strong>Multidimensional slicing</strong>  - We cannot access a dataset column by column if stored as list of lists. Hence flexibility of playing with the dataset is reduced.</li>
+<li><strong>Broadcasting</strong>- This feature which is often used in matrix computation is unavailable in lists.</li>
+<li><strong>Built-in Functions</strong>- Numpy array contains myriad functions, methods and variables, to ease our task of matrix computation.<br>
+That being cleared, let us understand NumPy in detail.</li>
+</ul>
+
